@@ -1,0 +1,28 @@
+#side-nav-container {
+    -ms-text-size-adjust: auto;
+    width: 304px;
+    min-width: 304px;
+    max-width: 304px;
+    font-family: 'Roboto';
+}
+
+#quicklink-title {
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Roboto ';
+}
+
+.layout-container {
+    display: flex;
+    font-family: 'Roboto';
+}
+
+.side-nav {
+    font-family: 'Roboto'
+}
+
+.ui-toolbar {
+    background-color: rgb(227, 253, 227) !important;
+    color: rgb(11, 11, 51);
+    font-family: 'Roboto';
+}

@@ -1,0 +1,162 @@
+.content-container {
+  display: flex;
+  background-color: #ffffff;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+#annc {
+  display: flex;
+  top: 10px;
+  width: 100%;
+  height: 60px;
+  background-color: #283c4d;
+  color: white;
+  font-size: 22px;
+  line-height: 28px;
+  align-content: center;
+  align-items: baseline;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  cursor: pointer;
+}
+
+.annc-title {
+  
+  display: flex;
+  padding-bottom: 4px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  width: 100vh;
+
+}
+
+.pie-chart {
+	width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+ flex-direction: column;
+ height: 400px;
+ 
+  color: #1D364D;
+	background:
+		radial-gradient(
+			circle closest-side,
+			white 0,
+			white 20%,
+			transparent 20%,
+			transparent 60%,
+			white 0
+		),
+		conic-gradient(
+			#fa3d67 0,
+			#fa3d67 35%,
+			#5c5c5c 0,
+			#5c5c5c 60%,
+			#757575 0,
+			#757575 75%,
+			#b8b8b8 0,
+			#b8b8b8 90%,
+			#c7c7c7 0,
+			#c7c7c7 100%
+	);
+	
+}
+
+.pie-chart figcaption {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	text-align: center;
+  display: flex;
+}
+.pie-chart span:after {
+	display: inline-block;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.4em;
+	height: 0.8em;
+	border-radius: 0.2em;
+	background: currentColor;
+}	
+.widget-container {
+ 
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+
+#widget-btn {
+  max-width: 42px;
+  max-height: 21px;
+  font-size: 12px;
+  margin: 3px;
+}
+
+
+#widget-mat-divider {
+   border-top: .5px solid rgb(232, 232, 232);
+}
+
+.textLink-flexParent-box {
+  display: flex;
+  flex-direction: ros;
+}
+
+#widget-title {
+  justify-content: center;
+}
+
+.text-links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.text-links div {
+  display: inline;
+  padding: 10px;
+  color: #fa3d67;
+}
+
+.text-links div:hover {
+  color:rgb(12, 22, 66);
+  cursor: pointer;
+}
+
+.text-links div:focus-visible {
+  color:adjust-hue($color: #860c0c, $degrees: 0)
+}

@@ -1,0 +1,24 @@
+#toolbar {
+    max-height: fit-content;
+    background-color:black;
+   color: white;
+    
+    & mat-icon {
+        color: white;
+    }
+.mat-mini-fab {
+    background: #fa3d67;
+    cursor: pointer;
+    border: 3px;
+    max-height:min-content;
+}
+
+.search-input {
+   font-size: medium;
+   padding-right: 10px;
+}
+
+.search-input:hover {
+    cursor:text;
+}
+}

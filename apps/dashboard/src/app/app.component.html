@@ -1,0 +1,67 @@
+<ui-toolbar [isLoggedIn]="isLoggedIn" [title]="title" [sidenav]="sidenav" (logout)="logout($event)" id="ui-toolbar">
+</ui-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav [opened]="isSidenaveOpen(sidenav, isLoggedIn)" #sidenav mode="side" class="app-sidenav" id="side-nav-container">
+    <nav>
+      <a mat-button class="nav-link side-nav" *ngFor="let link of links" 
+        [routerLink]="link.path" routerLinkActive="active">
+        <mat-icon>{{link.icon}}</mat-icon>
+        DB Admin Dashboard
+      </a>
+      <a mat-button class="nav-link side-nav" *ngFor="let link of links" 
+        [routerLink]="link.path" routerLinkActive="active">
+        <mat-icon>{{link.icon}}</mat-icon>
+        System Management
+      </a>
+      <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+        [routerLink]="link.path" routerLinkActive="active">
+        <mat-icon>{{link.icon}}</mat-icon>
+        Organization Management
+      </a>
+      <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+        [routerLink]="link.path" routerLinkActive="active">
+        <mat-icon>{{link.icon}}</mat-icon>
+        Solutions Management
+      </a>
+      <mat-divider></mat-divider>
+      
+      <p id="quicklink-title">Quick Links<mat-icon>settings</mat-icon></p>
+      <mat-divider></mat-divider>
+      <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+       [routerLink]="link.path" routerLinkActive="active">
+      <mat-icon>{{link.icon}}</mat-icon>
+       Application Blacklist
+      </a>
+      <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+       [routerLink]="link.path" routerLinkActive="active">
+      <mat-icon>{{link.icon}}</mat-icon>
+       Employees
+      </a>
+      <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+       [routerLink]="link.path" routerLinkActive="active">
+      <mat-icon>{{link.icon}}</mat-icon>
+      Saved Views
+      </a>
+      <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+       [routerLink]="link.path" routerLinkActive="active">
+      <mat-icon>{{link.icon}}</mat-icon>
+      Oregon State Credit Union
+      </a>
+      <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+       [routerLink]="link.path" routerLinkActive="active">
+      <mat-icon>{{link.icon}}</mat-icon>
+       Third Party Vendors
+      </a>
+      <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+       [routerLink]="link.path" routerLinkActive="active">
+      <mat-icon>{{link.icon}}</mat-icon>
+       My Saved Items
+      </a>
+    </nav>
+  </mat-sidenav>
+ 
+  <div class="app-content">
+    <!-- -->
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>
