@@ -9,7 +9,7 @@ import { AuthService } from '@workshop/core-data';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ToolbarComponent {
-  @Input() isLoggedIn;
+  @Input() isLoggedIn = false;
   @Input() title;
   @Input() sidenav;
   @Output() logout = new EventEmitter();

@@ -54,7 +54,7 @@
 }
 
 .pie-chart {
-	width: 500px;
+	min-width: 300px;
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
@@ -130,7 +130,21 @@
 }
 
 .widget-container h2 {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
 
+}
+
+.card-container {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  max-width: 33%;
+  margin: 20px;
 }
 
 

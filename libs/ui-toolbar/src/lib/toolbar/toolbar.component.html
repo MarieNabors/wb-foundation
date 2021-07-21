@@ -6,20 +6,20 @@
     <span class="logo">
       <img src="assets/imsi-temp.jpg" alt="Logo">
     </span>
-    <span class="title">
+    <span class="title" *ngIf="isLoggedIn">
       {{title}}
     </span>
   </span>
   <span class="spacer"></span>
-  <span class="search-input">
+  <span class= "search-input" *ngIf="isLoggedIn">
    <mat-form-field class="example-full-width" id="quick-search">
     <input matInput placeholder="Quick Search">
   </mat-form-field>
   </span>
-  <button class="help" mat-mini-fab>
+  <button class="help" *ngIf="isLoggedIn" mat-mini-fab>
     <mat-icon>help_outline</mat-icon>
   </button>
-  <button class="notifications" mat-mini-fab>
+  <button class="notifications" *ngIf="isLoggedIn" mat-mini-fab>
     <mat-icon>notifications</mat-icon>
   </button>
   <button *ngIf="isLoggedIn" class="login" (click)="logout.emit($event)" mat-mini-fab>
