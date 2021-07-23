@@ -22,6 +22,8 @@ constructor(
     this.isLoggedIn$
     
       this.router.navigate(['content']);
+
+      
   
     // getWidgets($event) {
     //   return;

@@ -5,7 +5,7 @@
   flex-direction: column;
   height: 100%;
   justify-content: center;
-
+  font-family: 'Roboto' sans-serif;
   flex-wrap: wrap;
 }
 
@@ -13,7 +13,60 @@
   flex-basis: 100%;
   height: 0;
 }
+body {
+  text-align: center;
+}
+.chart {
+  width: 600px;
+  margin: 0 auto;
+}
+.message {
+  display: none;
+  font-size: 20px;
+}
+.control {
+  margin: 0 auto;
+}
 
+svg {
+  font-size: 12px;
+  font-family: Ariel;
+  shape-rendering: crispEdge;
+
+  text {
+    fill: #ccc;
+    stoke: none;
+  }
+  
+  rect {
+    fill: #fff;
+  }
+  
+  .zoom-panel {
+    &.scrollable {
+      fill: lightblue;
+      cursor: ew-resize;
+    }
+  }
+  .x-axis {
+    fill: none;
+    stroke: none;
+    stroke-width: 1px;
+    .tick > line, .tick > text {
+      display: none;
+    }
+  }
+  
+  .y-axis {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+
+    .tick > line {
+      display: none;
+    }
+  }
+}
 #annc {
   display: flex;
   top: 10px;
@@ -32,7 +85,7 @@
 }
 
 .annc-title {
-  
+  font-family: 'Roboto' sans-serif;
   display: flex;
   padding-bottom: 4px;
   justify-content: center;
@@ -118,7 +171,7 @@
   display:flex;
   flex-direction: row;
   min-width: 100%;
-  background-color: #fa3d67;
+  background-color: #726d6e;
   color:#c7c7c7;
   flex-wrap: wrap;
   margin: 20px 20px 20px 20px;
@@ -127,6 +180,7 @@
   align-content: center;
   border-radius: 4px;
   padding: 60px;
+  
 }
 
 .widget-container h2 {
@@ -139,7 +193,7 @@
 }
 
 .card-container {
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
@@ -175,6 +229,7 @@
   width: 100%;
   justify-content: space-between;
   margin: 5px;
+  font-family: 'Roboto';
 }
 
 .text-links div {
@@ -190,4 +245,59 @@
 
 .text-links div:focus-visible {
   color:adjust-hue($color: #860c0c, $degrees: 0)
+}
+
+body {
+  text-align: center;
+}
+.chart {
+  width: 600px;
+  margin: 0 auto;
+}
+.message {
+  display: none;
+  font-size: 20px;
+}
+.control {
+  margin: 0 auto;
+}
+
+svg {
+  font-size: 12px;
+  font-family: Ariel;
+  shape-rendering: crispEdge;
+
+  text {
+    fill: #ccc;
+    stoke: none;
+  }
+  
+  rect {
+    fill: #fff;
+  }
+  
+  .zoom-panel {
+    &.scrollable {
+      fill: lightblue;
+      cursor: ew-resize;
+    }
+  }
+  .x-axis {
+    fill: none;
+    stroke: none;
+    stroke-width: 1px;
+    .tick > line, .tick > text {
+      display: none;
+    }
+  }
+  
+  .y-axis {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+
+    .tick > line {
+      display: none;
+    }
+  }
 }
