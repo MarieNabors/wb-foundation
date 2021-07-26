@@ -1,3 +1,10 @@
+* {
+  font-family: 'Roboto' sans-serif;
+
+#omg {
+  font-family: 'Roboto';
+}
+
 .content-container {
   display: flex;
   background-color: #ffffff;
@@ -5,7 +12,7 @@
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto';
   flex-wrap: wrap;
 }
 
@@ -85,7 +92,7 @@ svg {
 }
 
 .annc-title {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto';
   display: flex;
   padding-bottom: 4px;
   justify-content: center;
@@ -95,7 +102,7 @@ svg {
   width: 100%;
   flex-wrap: wrap;
   color: white;
-  font-size: 22px;
+  // font-size: 22px;
   line-height: 28px;
 }
 
@@ -174,8 +181,8 @@ svg {
   background-color: #726d6e;
   color:#c7c7c7;
   flex-wrap: wrap;
-  margin: 20px 20px 20px 20px;
-  align-items: center;
+  margin: 20px 20px 20px 0;
+  align-items: middle;
   justify-content: center;
   align-content: center;
   border-radius: 4px;
@@ -300,4 +307,5 @@ svg {
       display: none;
     }
   }
+}
 }

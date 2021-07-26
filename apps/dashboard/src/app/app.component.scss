@@ -1,9 +1,17 @@
+*{
+    font-family: 'Roboto'sans-serif;
+}
+
 #side-nav-container {
     -ms-text-size-adjust: auto;
     width: 304px;
     min-width: 304px;
     max-width: 304px;
     font-family: 'Roboto';
+    background-color: rgb(38, 162, 211);
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 16px;
 }
 
 #quicklink-title {

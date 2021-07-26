@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'Oregon State Credit Union | Test';
+  quickLinks = 'QUICKLINKS';
   isLoggedIn$: Observable<boolean> = this.authService.isAuthenticated$;
   isLoggedIn;
 

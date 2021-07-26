@@ -1,93 +1,106 @@
 <div class="content-container" tabindex="0">
   <div id="annc">
     <span class="annc-title">
-        <mat-icon style="padding: 40px;">keyboard_arrow_left</mat-icon>
-        Announcements...
-        <mat-icon style="padding: 40px;">keyboard_arrow_right</mat-icon>
+      <mat-icon *ngIf="">keyboard_arrow_left</mat-icon>
+      <p id="omg" style="font-family: 'Roboto;">Announcements...</p>
+      <mat-icon>keyboard_arrow_right</mat-icon>
     </span>
   </div>
-<div class="text-links">
-   <span>
-     <div>Configuration Page</div>
-    </span>
-   <span>
+  <div class="text-links">
+    <span> <div>Configuration Page</div> </span>
+    <span>
       <div>Saved Views</div>
       <div>Advanced Search</div>
-   </span>
-    </div>
- 
+    </span>
+  </div>
   <div class="widget-container">
-  <div class="card-container">
-<mat-card tabindex="1">
-<mat-card-content>
-<h2>Completed Requests by Date</h2>
-<h1>D3 Bar Chart: Horizontal Scroll Example</h1>
-
-<div class="chart">
-  <svg width="560" height="300"
-  margin-top="20" margin-left="80"
-  margin-right="40" margin-bottom="30" y-heading="members"></svg>
-</div>
-
-<div class="control">
-  <button onclick="addData()">Add</button>
-  <button onclick="removeData()">Remove</button>
-</div>
-</mat-card-content>
-<mat-card-footer>
-<cite>Powered by Workbox</cite>
-</mat-card-footer>
-</mat-card>
-</div>
-  <div class="card-container">
-    <mat-card tabindex="2">
-      <mat-card-content>
-        <h2>Partial Requests</h2>
-            <div class="d3-container">
-              <figure class="pie-chart">
-                
-                <figcaption>
-                  36%<span style="color:#fa3d67"></span><br>
-                  25%<span style="color:#5c5c5c"></span><br>
-                  15%<span style="color:#757575"></span><br>
-                  15%<span style="color:#b8b8b8"></span><br>
-                  10%<span style="color:#c7c7c7"></span>
-                  9%<span style="color:#c7c7c7"></span>
-                </figcaption>
-                <mat-divider></mat-divider>
+    <div class="card-container">
+      <mat-card tabindex="1">
+        <mat-card-content>
+          <h2 class="d3-container">Completed Requests by Date</h2>
+          <div class="d3-container">
+            <figure class="pie-chart">
+              <figcaption>
+                36%<span style="color:#fa3d67"></span><br />
+                25%<span style="color:#5c5c5c"></span><br />
+                15%<span style="color:#757575"></span><br />
+                15%<span style="color:#b8b8b8"></span><br />
+                10%<span style="color:#c7c7c7"></span> 9%<span
+                  style="color:#c7c7c7"
+                ></span>
+              </figcaption>
+              <mat-divider></mat-divider>
             </figure>
-            </div>
-        
-      </mat-card-content>
-      <mat-card-footer>
-      <cite>Powered by Workbox</cite>
-      </mat-card-footer>
-    </mat-card>
+          </div>
+        </mat-card-content>
+        <mat-card-footer> <cite>Powered by Workbox</cite> </mat-card-footer>
+      </mat-card>
     </div>
     <div class="card-container">
-    <mat-card tabindex="3">
-      <mat-card-content>
-        <h2>Partial Requests</h2>
-            <div class="d3-container">
-              <figure class="pie-chart">
-                
-                <figcaption>
-                  36%<span style="color:#fa3d67"></span><br>
-                  25%<span style="color:#5c5c5c"></span><br>
-                  15%<span style="color:#757575"></span><br>
-                  15%<span style="color:#b8b8b8"></span><br>
-                  10%<span style="color:#c7c7c7"></span>
-                  9%<span style="color:#c7c7c7"></span>
-                </figcaption>
-                <mat-divider></mat-divider>
+      <mat-card tabindex="2">
+        <mat-card-content>
+          <h2>Partial Requests</h2>
+          <div class="d3-container">
+            <figure class="pie-chart">
+              <figcaption>
+                36%<span style="color:#fa3d67"></span><br />
+                25%<span style="color:#5c5c5c"></span><br />
+                15%<span style="color:#757575"></span><br />
+                15%<span style="color:#b8b8b8"></span><br />
+                10%<span style="color:#c7c7c7"></span> 9%<span
+                  style="color:#c7c7c7"
+                ></span>
+              </figcaption>
+              <mat-divider></mat-divider>
             </figure>
-            </div>
-        
-      </mat-card-content>
-      <mat-card-footer>
-      <cite>Powered by Workbox</cite>
-      </mat-card-footer>
-    </mat-card>
+          </div>
+        </mat-card-content>
+        <mat-card-footer> <cite>Powered by Workbox</cite> </mat-card-footer>
+      </mat-card>
     </div>
+    <div class="card-container">
+      <mat-card tabindex="3">
+        <mat-card-content>
+          <h2>Pending & Hidden Requests</h2>
+          <div class="d3-container">
+            <figure class="pie-chart">
+              <figcaption>
+                36%<span style="color:#fa3d67"></span><br />
+                25%<span style="color:#5c5c5c"></span><br />
+                15%<span style="color:#757575"></span><br />
+                15%<span style="color:#b8b8b8"></span><br />
+                10%<span style="color:#c7c7c7"></span> 9%<span
+                  style="color:#c7c7c7"
+                ></span>
+              </figcaption>
+              <mat-divider></mat-divider>
+            </figure>
+          </div>
+        </mat-card-content>
+        <mat-card-footer> <cite>Powered by Workbox</cite> </mat-card-footer>
+      </mat-card>
     </div>
-
+    <div class="card-container">
+      <mat-card tabindex="4">
+        <mat-card-content>
+          <h2>Application by Disposition</h2>
+          <div class="d3-container">
+            <figure class="pie-chart">
+              <figcaption>
+                36%<span style="color:#fa3d67"></span><br />
+                25%<span style="color:#5c5c5c"></span><br />
+                15%<span style="color:#757575"></span><br />
+                15%<span style="color:#b8b8b8"></span><br />
+                10%<span style="color:#c7c7c7"></span> 9%<span
+                  style="color:#c7c7c7"
+                ></span>
+              </figcaption>
+              <mat-divider></mat-divider>
+            </figure>
+          </div>
+        </mat-card-content>
+        <mat-card-footer> <cite>Powered by Workbox</cite> </mat-card-footer>
+      </mat-card>
+    </div>
+  </div>
+</div>

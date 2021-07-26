@@ -24,8 +24,27 @@
         Solutions Management
       </a>
       <mat-divider></mat-divider>
-      
-      <p id="quicklink-title">Quick Links<mat-icon>settings</mat-icon></p>
+      <p id="quicklink-title">
+        QUICKLINKS
+        <mat-icon>settings</mat-icon>
+        <nav>
+          <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+            [routerLink]="link.path" routerLinkActive="active">
+          <mat-icon>link</mat-icon>
+            Quick Link Choice A
+            </a>
+            <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+            [routerLink]="link.path" routerLinkActive="active">
+          <mat-icon>link</mat-icon>
+            Quick Link Choice B
+            </a>
+            <a mat-button class="nav-link side-nav" *ngFor="let link of links"
+            [routerLink]="link.path" routerLinkActive="active">
+            <mat-icon>link</mat-icon>
+            Quick Link Choice C
+            </a>
+          </nav>
+     
       <mat-divider></mat-divider>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links"
        [routerLink]="link.path" routerLinkActive="active">
