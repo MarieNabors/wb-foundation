@@ -4,75 +4,82 @@
   <mat-sidenav [opened]="isSidenaveOpen(sidenav, isLoggedIn)" #sidenav mode="side" class="app-sidenav" id="side-nav-container">
     <nav>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links" 
-        [routerLink]="link.path" routerLinkActive="active">
+        [routerLink]="link.path" routerLinkActive="active" id="wb-nav-text">
         <mat-icon>{{link.icon}}</mat-icon>
         DB Admin Dashboard
       </a>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links" 
-        [routerLink]="link.path" routerLinkActive="active">
+        [routerLink]="link.path" routerLinkActive="active" id="wb-nav-text">
         <mat-icon>{{link.icon}}</mat-icon>
         System Management
       </a>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-        [routerLink]="link.path" routerLinkActive="active">
+        [routerLink]="link.path" routerLinkActive="active" id="wb-nav-text">
         <mat-icon>{{link.icon}}</mat-icon>
         Organization Management
       </a>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-        [routerLink]="link.path" routerLinkActive="active">
+        [routerLink]="link.path" routerLinkActive="active" id="wb-nav-text">
         <mat-icon>{{link.icon}}</mat-icon>
         Solutions Management
       </a>
-      <mat-divider></mat-divider>
-      <p id="quicklink-title">
-        QUICKLINKS
+      <mat-divider id="nav-divider"></mat-divider>
+      <div class="wb-quicklink-wrapper">
+      <p id="wb-nav-text">
+        QUICK LINKS
+        </p>
         <mat-icon>settings</mat-icon>
-        <nav>
-          <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-            [routerLink]="link.path" routerLinkActive="active">
-          <mat-icon>link</mat-icon>
-            Quick Link Choice A
-            </a>
-            <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-            [routerLink]="link.path" routerLinkActive="active">
-          <mat-icon>link</mat-icon>
-            Quick Link Choice B
-            </a>
-            <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-            [routerLink]="link.path" routerLinkActive="active">
-            <mat-icon>link</mat-icon>
-            Quick Link Choice C
-            </a>
-          </nav>
+         <p id="wb-nav-text">Select a Quick Link</p>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+         <mat-icon>arrow_drop_down</mat-icon>
+       
+</button>
+</div>
+<mat-divider id="nav-divider"></mat-divider>
+<mat-menu #menu="matMenu">
+
+  <button mat-menu-item>
+    <span>Quick Link Option 0</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>voicemail</mat-icon>
+    <span>Quick Link Option 1</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Quick Link Option 2</span>
+  </button>
+</mat-menu>
+
      
       <mat-divider></mat-divider>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-       [routerLink]="link.path" routerLinkActive="active">
+       [routerLink]="link.path" routerLinkActive="active" id="wb-nav-text">
       <mat-icon>{{link.icon}}</mat-icon>
        Application Blacklist
       </a>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-       [routerLink]="link.path" routerLinkActive="active">
+       [routerLink]="link.path" routerLinkActive="active" id="wb-nav-text">
       <mat-icon>{{link.icon}}</mat-icon>
        Employees
       </a>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-       [routerLink]="link.path" routerLinkActive="active">
+       [routerLink]="link.path" routerLinkActive="active" id="wb-nav-text">
       <mat-icon>{{link.icon}}</mat-icon>
       Saved Views
       </a>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-       [routerLink]="link.path" routerLinkActive="active">
+       [routerLink]="link.path" routerLinkActive="active" id="wb-nav-text">
       <mat-icon>{{link.icon}}</mat-icon>
       Oregon State Credit Union
       </a>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-       [routerLink]="link.path" routerLinkActive="active">
+       [routerLink]="link.path" routerLinkActive="active" id="wb-nav-text">
       <mat-icon>{{link.icon}}</mat-icon>
        Third Party Vendors
       </a>
       <a mat-button class="nav-link side-nav" *ngFor="let link of links"
-       [routerLink]="link.path" routerLinkActive="active">
+       [routerLink]="link.path" routerLinkActive="active" id="wb-nav-text">
       <mat-icon>{{link.icon}}</mat-icon>
        My Saved Items
       </a>

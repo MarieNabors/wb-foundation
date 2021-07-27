@@ -12,7 +12,10 @@ export class ContentComponent implements OnInit {
   isLoggedIn$: Observable<boolean> = this.authService.isAuthenticated$;
   isLoggedIn;
 
+
+  
 constructor(
+  // private announcementService: AnnouncementService;  
    private authService: AuthService,
    private router: Router
   ) { }
@@ -20,6 +23,10 @@ constructor(
   ngOnInit() {
 
     this.isLoggedIn$
+
+    // this.getAnnouncements() {
+
+    // }
     
       this.router.navigate(['content']);
 

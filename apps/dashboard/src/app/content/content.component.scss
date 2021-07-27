@@ -1,8 +1,8 @@
 * {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
 
 #omg {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 .content-container {
@@ -12,8 +12,9 @@
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   flex-wrap: wrap;
+  flex: 1 1 auto;
 }
 
 .break {
@@ -37,12 +38,13 @@ body {
 
 svg {
   font-size: 12px;
-  font-family: Ariel;
+  font-family: 'Roboto', sans-serif;
   shape-rendering: crispEdge;
 
   text {
     fill: #ccc;
     stoke: none;
+    text-rendering: auto;
   }
   
   rect {
@@ -92,7 +94,7 @@ svg {
 }
 
 .annc-title {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   display: flex;
   padding-bottom: 4px;
   justify-content: center;
@@ -102,24 +104,28 @@ svg {
   width: 100%;
   flex-wrap: wrap;
   color: white;
-  // font-size: 22px;
   line-height: 28px;
+}
+
+.side-nav {
+  color: #ffffff;
 }
 
 .links {
   display: flex;
   flex-direction: row;
   width: 100vh;
-
 }
 
 .pie-chart {
 	min-width: 300px;
+  max-width: 300px;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
  flex-direction: column;
- height: 400px;
+ min-height: 300px;
+ max-height: 300px;
  
   color: #1D364D;
 	background:
@@ -178,7 +184,7 @@ svg {
   display:flex;
   flex-direction: row;
   min-width: 100%;
-  background-color: #726d6e;
+  background-color: #E5E5E5;
   color:#c7c7c7;
   flex-wrap: wrap;
   margin: 20px 20px 20px 0;
@@ -204,8 +210,10 @@ svg {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  max-width: 33%;
-  margin: 20px;
+  max-width: 400px;
+  min-width: 400px;
+  padding: 0;
+  margin-right: auto;
 }
 
 
@@ -223,7 +231,7 @@ svg {
 
 .textLink-flexParent-box {
   display: flex;
-  flex-direction: ros;
+  flex-direction: row;
 }
 
 #widget-title {
@@ -236,13 +244,14 @@ svg {
   width: 100%;
   justify-content: space-between;
   margin: 5px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+  color:#A91661;
 }
 
 .text-links div {
   display: inline;
   padding: 10px;
-  color: #fa3d67;
+  color: #A91661;
 }
 
 .text-links div:hover {
@@ -251,7 +260,7 @@ svg {
 }
 
 .text-links div:focus-visible {
-  color:adjust-hue($color: #860c0c, $degrees: 0)
+  color:adjust-hue($color: #A91661, $degrees: 0)
 }
 
 body {

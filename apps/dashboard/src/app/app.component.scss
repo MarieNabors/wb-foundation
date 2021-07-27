@@ -1,36 +1,60 @@
-*{
-    font-family: 'Roboto'sans-serif;
-}
-
 #side-nav-container {
     -ms-text-size-adjust: auto;
     width: 304px;
     min-width: 304px;
     max-width: 304px;
     font-family: 'Roboto';
-    background-color: rgb(38, 162, 211);
+     background: #1D364D;
     color: #ffffff;
     font-weight: 900;
     font-size: 16px;
 }
+#nav-divider {
+    border: 0.3px solid #02AC98;
+    opacity: 60%;
+}
+
+#wb-matCard-container {
+    max-width: 400px;
+    min-width: 400px;
+    padding: 0;
+}
+
+.wb--quicklink-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
 
 #quicklink-title {
     display:flex;
     justify-content: space-between;
-    font-family: 'Roboto ';
 }
 
 .layout-container {
     display: flex;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
+}
+
+#wb-nav-text {
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
 }
 
 .side-nav {
-    font-family: 'Roboto'
+    font-family: 'Roboto', sans-serif;
+    padding: 2.5px;
 }
 
 .ui-toolbar {
     background-color: rgb(227, 253, 227) !important;
     color: rgb(11, 11, 51);
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }

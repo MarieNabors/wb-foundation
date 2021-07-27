@@ -1,21 +1,19 @@
 <div class="content-container" tabindex="0">
   <div id="annc">
-    <span class="annc-title">
-      <mat-icon *ngIf="">keyboard_arrow_left</mat-icon>
-      <p id="omg" style="font-family: 'Roboto;">Announcements...</p>
-      <mat-icon>keyboard_arrow_right</mat-icon>
+    <span class="annc-title" class="material-icons-outlined">
+      <h4 id="omg">Announcements...</h4>
     </span>
   </div>
   <div class="text-links">
-    <span> <div>Configuration Page</div> </span>
+    <span> <div class="text-links">Configuration Page</div> </span>
     <span>
-      <div>Saved Views</div>
-      <div>Advanced Search</div>
+      <div class="text-links">Saved Views</div>
+      <div class="text-liks">Advanced Search</div>
     </span>
   </div>
   <div class="widget-container">
     <div class="card-container">
-      <mat-card tabindex="1">
+      <mat-card id="wb-matCard-container" tabindex="1">
         <mat-card-content>
           <h2 class="d3-container">Completed Requests by Date</h2>
           <div class="d3-container">
@@ -62,28 +60,6 @@
       <mat-card tabindex="3">
         <mat-card-content>
           <h2>Pending & Hidden Requests</h2>
-          <div class="d3-container">
-            <figure class="pie-chart">
-              <figcaption>
-                36%<span style="color:#fa3d67"></span><br />
-                25%<span style="color:#5c5c5c"></span><br />
-                15%<span style="color:#757575"></span><br />
-                15%<span style="color:#b8b8b8"></span><br />
-                10%<span style="color:#c7c7c7"></span> 9%<span
-                  style="color:#c7c7c7"
-                ></span>
-              </figcaption>
-              <mat-divider></mat-divider>
-            </figure>
-          </div>
-        </mat-card-content>
-        <mat-card-footer> <cite>Powered by Workbox</cite> </mat-card-footer>
-      </mat-card>
-    </div>
-    <div class="card-container">
-      <mat-card tabindex="4">
-        <mat-card-content>
-          <h2>Application by Disposition</h2>
           <div class="d3-container">
             <figure class="pie-chart">
               <figcaption>
